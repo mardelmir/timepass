@@ -1,0 +1,1 @@
+// De aquí sacaremos la hora. Recuerda que hay que pasarla como una req y con js podemos obtener la fecha con new Date()
