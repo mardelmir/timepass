@@ -1,6 +1,12 @@
 const express = require('express')
 const endrouteRouter = express.Router()
 
+// Corrección clase:
+
+// const validarHora = require('../middlewares/validarHora)
+//endrouteRouter.get('/', validarHora, (req, res) => { ... } porque sólo queremos la validación en este endpoint
+
+
 endrouteRouter.get('/', (req, res) => {
     res.send(`
         <h1>Ruta Final</h1>

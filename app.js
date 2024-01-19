@@ -7,7 +7,9 @@ const validarMidd = require('./middlewares/validarHora')
 const indexRouter = require('./routes/index')
 const endrouteRouter = require('./routes/endroute')
 
-app.use('/', horaMidd, indexRouter)
+app.use(horaMidd)
+
+app.use('/', indexRouter)
 app.use('/endroute', validarMidd, endrouteRouter)
 
 app.use((req, res) => {
